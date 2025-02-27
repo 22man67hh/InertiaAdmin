@@ -32,5 +32,7 @@ Route::middleware('auth')->group(function () {
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
 Route::get('/about',[FrontPageController::class,'about'])->name('about');
+Route::get('/news',[FrontPageController::class,'News'])->name('news');
+Route::get('/blogs',[FrontPageController::class,'Blogs'])->name('blogs');
 Route::get('adminss',[OthersController::class,'sidebar'])->name('sidebar');
 require __DIR__.'/auth.php';

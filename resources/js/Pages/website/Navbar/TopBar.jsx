@@ -15,15 +15,15 @@ function TopBar({ handleOrderPopup }) {
     const menu = [
         { id: 1, name: "Home", link: "/#" },
         { id: 2, name: "About", link: route('about') },
-        { id: 3, name: "Service", link: "/#service" },
-        { id: 4, name: "Service1", link: "/#" },
+        // { id: 3, name: "Service", link: "/#service" },
+        // { id: 4, name: "Service1", link: "/#" },
         {
             id: 5,
-            name: "Service2",
+            name: "Explore Us",
             link: "/#",
             subMenu: [
-                { id: 51, name: "Sub Service 1", link: "/sub1" },
-                { id: 52, name: "Sub Service 2", link: "/sub2" },
+                { id: 51, name: "News", link:route('news') },
+                { id: 52, name: "Blogs", link: route('blogs') },
             ],
         },
     ];

@@ -9,11 +9,12 @@ import Service from './Service'
 import Faq from './Faq'
 import Subscribe from '../Subscribe/Subscribe'
 
-function About() {
+function About({title}) {
+    console.log("Hero Props:", title);
   return (
     <div className="dark:bg-slate-800">
 
-      <Hero/>
+      <Hero title={title}/>
       <Section className="dark:bg-slate-800"/>
       <Service/>
 <Team/>
@@ -22,5 +23,5 @@ function About() {
     </div>
   )
 }
-About.layout = page =><FrontLayout children={page}/>
+About.layout = (page) => <FrontLayout {...page.props}>{page}</FrontLayout>;
 export default About
