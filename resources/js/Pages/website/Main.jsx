@@ -11,6 +11,8 @@ import Blog from './Blog/Blog';
 import Subscribe from './Subscribe/Subscribe';
 import Testimonial from './Testimonial/Testimonial';
 import Footer from './Footer/Footer';
+import NewNav from './Navbar/NewNav';
+import NewBest from './Best/NewBest';
 function Main() {
     const [orderPopUp,setOrderPopUp]=useState(false);
     const handlePopup=()=>{
@@ -29,14 +31,17 @@ function Main() {
   return (
     <>
       <div className='bg-white dark:bg-gray-900 dark:text-white duration-200'>
-<TopBar handlePopup={handlePopup}/>
-<Hero handlePopup={handlePopup}/>
-<Best/>
-<Blog handlePopup={handlePopup}/>
-<Banner/>
-<Subscribe/>
-<Testimonial/>
-<Footer/>
+{/* <TopBar handlePopup={handlePopup}/> */}
+<NewNav handlePopup={handlePopup}/>
+{/* <Hero handlePopup={handlePopup}/> */}
+<NewBest/>
+{/* <Best/> */}
+
+{/* <Blog handlePopup={handlePopup}/> */}
+{/* <Banner/> */}
+{/* <Subscribe/> */}
+{/* <Testimonial/> */}
+{/* <Footer/> */}
       </div>
     </>
   )

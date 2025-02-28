@@ -34,5 +34,6 @@ Route::middleware('auth')->group(function () {
 Route::get('/about',[FrontPageController::class,'about'])->name('about');
 Route::get('/news',[FrontPageController::class,'News'])->name('news');
 Route::get('/blogs',[FrontPageController::class,'Blogs'])->name('blogs');
+Route::get('/gallery',[FrontPageController::class,'Gallery'])->name('gallery');
 Route::get('adminss',[OthersController::class,'sidebar'])->name('sidebar');
 require __DIR__.'/auth.php';

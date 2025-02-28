@@ -4,7 +4,8 @@ import { IoMdSearch } from "react-icons/io";
 import { MdEmail } from "react-icons/md";
 import DarkMode from "./DarkMode";
 import { Link } from "@inertiajs/react";
-function TopBar({ handleOrderPopup }) {
+import { motion } from "framer-motion";
+function NewNav({ handleOrderPopup }) {
     const [isModalOpen, setIsModalOpen] = useState(false);
     const [isMobileNavOpen, setIsMobileNavOpen] = useState(false);
     const [openDropdown, setOpenDropdown] = useState(null);
@@ -39,8 +40,8 @@ function TopBar({ handleOrderPopup }) {
 
     return (
         <div className="shadow-md bg-white dark:bg-slate-800 dark:text-white duration-200 relative z-40">
-            <div className="bg-primary/40 py-2">
-                <div className="container flex justify-between items-center">
+            {/* <div className="bg-primary/40 py-2">
+              <div className="container flex justify-between items-center">
                     <div>
                         <a href="#" className="font-bold text-xl items-center flex gap-1">
                             <MdEmail size="30" />
@@ -100,7 +101,7 @@ function TopBar({ handleOrderPopup }) {
                     </div>
                 </div>
             )}
-            </div>
+            </div> */}
 
             <div data-aos="zoom-in" className="flex justify-between items-center px-4 py-2 bg-white dark:bg-slate-800">
                 <a href="#" className="font-bold text-xl">LOGO</a>
@@ -111,7 +112,7 @@ function TopBar({ handleOrderPopup }) {
 
             {/* Mobile Navigation */}
             {isMobileNavOpen && (
-                <div className="sm:hidden bg-white dark:bg-slate-800 p-4">
+                <div className="sm:hidden bg-slate-200 dark:bg-slate-800 p-4">
                     <ul className="flex flex-col space-y-2">
                         {menu.map((data) => (
                              <li key={data.id} className="relative">
@@ -234,12 +235,17 @@ function TopBar({ handleOrderPopup }) {
                                     </li>
                                 ))}
                             </ul>
+
                         </div>
+
                     </li>
                 </ul>
+
+
+
             </div>
         </div>
     );
 }
 
-export default TopBar;
+export default NewNav;

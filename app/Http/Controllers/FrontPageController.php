@@ -24,5 +24,10 @@ class FrontPageController extends Controller
             'title'=>"Blogs"
         ]);
     }
+    public function Gallery(){
+        return Inertia::render('website/Gallery/Gallery',[
+            'title'=>"Gallery"
+        ]);
+    }
 
 }

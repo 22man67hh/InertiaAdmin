@@ -1,11 +1,13 @@
 import FrontLayout from '@/Layouts/FrontLayout'
 import React from 'react'
 import Hero from '../About/Hero'
+import Content from './Content'
 
 const Main = ({title}) => {
   return (
     <>
 <Hero title={title}/>
+<Content/>
     </>
   )
 }
