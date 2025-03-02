@@ -1,8 +1,8 @@
 import React from "react";
-import Img1 from "../../../../assets/best/desk-writing-work-hand-man-working-person-pencil-people-male-meeting-corporate-office-communication-two-professional-business-paper-caucasian-partnership-team-design-plan-teamwork-learni.jpg";
-import Img2 from "../../../../assets/best/auditorium-room-education-classroom-interior-design-school-1275810-pxhere.com.jpg";
-import Img3 from "../../../../assets/best/achievement-agreement-arms-bump-business-cheer-up-1433619-pxhere.com.jpg";
-import Img4 from "../../../../assets/best/writing-work-pen-office-brand-cash-1238368-pxhere.com.jpg";
+import Img1 from "../../../../assets/best/desk.jpg";
+import Img2 from "../../../../assets/best/auditorium.jpg";
+import Img3 from "../../../../assets/best/achievement.jpg";
+import Img4 from "../../../../assets/best/writing.jpg";
 
 const OurBest = [
     {
@@ -46,7 +46,7 @@ const OurBest = [
 
 const Best = () => {
     return (
-        <div className="mt-14 mb-12">
+        <div className=" mt-20 mb-12">
             <div className="text-center mb-10 max-w-[600px] mx-auto">
                 <h2 data-aos="fade-up" className="text-sm text-primary">
                     Get the Best from Our Network

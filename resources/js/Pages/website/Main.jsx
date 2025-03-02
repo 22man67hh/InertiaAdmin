@@ -13,6 +13,8 @@ import Testimonial from './Testimonial/Testimonial';
 import Footer from './Footer/Footer';
 import NewNav from './Navbar/NewNav';
 import NewBest from './Best/NewBest';
+import Destination from '../Destination/Destination';
+import Feedback from './Feedback/Feedback';
 function Main() {
     const [orderPopUp,setOrderPopUp]=useState(false);
     const handlePopup=()=>{
@@ -35,9 +37,11 @@ function Main() {
 <NewNav handlePopup={handlePopup}/>
 {/* <Hero handlePopup={handlePopup}/> */}
 <NewBest/>
-{/* <Best/> */}
+<Feedback/>
 
-{/* <Blog handlePopup={handlePopup}/> */}
+{/* <Best/> */}
+<Destination/>
+<Blog handlePopup={handlePopup}/>
 {/* <Banner/> */}
 {/* <Subscribe/> */}
 {/* <Testimonial/> */}

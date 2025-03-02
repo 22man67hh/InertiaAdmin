@@ -1,7 +1,7 @@
 import React from "react";
-import Img1 from "../../../../assets/best/desk-writing-work-hand-man-working-person-pencil-people-male-meeting-corporate-office-communication-two-professional-business-paper-caucasian-partnership-team-design-plan-teamwork-learni.jpg";
-import Img2 from "../../../../assets/best/auditorium-room-education-classroom-interior-design-school-1275810-pxhere.com.jpg";
-import Img3 from "../../../../assets/best/achievement-agreement-arms-bump-business-cheer-up-1433619-pxhere.com.jpg";
+import Img1 from "../../../../assets/best/desk.jpg";
+import Img2 from "../../../../assets/best/auditorium.jpg";
+import Img3 from "../../../../assets/best/achievement.jpg";
 const OurBlogs = [
     {
         id: 1,

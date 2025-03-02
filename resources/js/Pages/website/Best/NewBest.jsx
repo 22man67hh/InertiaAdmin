@@ -28,11 +28,11 @@ const NewBest = () => {
         </div>
 
         {/* Image Section */}
-        <div className='relative flex justify-center w-full'>
+        <div className='relative md:flex justify-center w-full hidden'>
           <img src={ellipse1} alt='' className='absolute right-[35%] top-[70%] shadow-lg' />
 <motion.img
 src={vector}
-className='absolute right-20 top-0'
+className='absolute right-20 top-56'
 animate={{opacity:[1,0.1]}}
 transition={{repeat:Infinity,duration:1.5,ease:"easeInOut"}}
 
@@ -41,18 +41,18 @@ transition={{repeat:Infinity,duration:1.5,ease:"easeInOut"}}
           <motion.img
             src={plane}
             alt=''
-            className='absolute top-[-150px] left-0 max-w-full'
+            className='absolute top-[-150px] left-0 max-w-full  hidden lg:block'
             initial={{ x: -100, y: -150, opacity: 1 ,rotateY:0}}
-            animate={{ x: [0, 250, 500, 350], y: [-100, -140, -130, -120], opacity: 1,
-                rotateY: [0, 0, 0,180],  }}
-            transition={{ duration: 4, ease: "linear",
-
+            animate={{ x: [-100, 250, 480, 350, -100],
+                 y: [-150, -140, -130, -120, -150], opacity: 1,
+                rotateY: [0, 0, 160,180,180], }}
+            transition={{ duration: 10, ease: "linear",
              }}
 
           />
 
-          <div className='absolute right-0 -top-52'>
-            <img src={header} alt='' className='max-w-full' />
+          <div className='absolute right-0 -top-72'>
+            <img src={header} alt='' className='max-w-full scale-75' />
           </div>
         </div>
       </div>
